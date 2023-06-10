@@ -99,11 +99,11 @@ const Signup = () => {
 
   return (
     <>
-      <div className="w-full flex flex-col mt-8 items-center">
+      <div className="w-full flex flex-col mt-20 md:mt-52 items-center">
         <h1 className="text-xl font-bold">Sign Up</h1>
         {otpSent ? (
           <>
-            <div class="p-2 w-full md:w-1/3">
+            <div class="p-2 w-full md:w-1/2 lg:w-1/4">
               <div class="relative">
                 <label for="name" class="leading-7 text-sm text-gray-300">
                   OTP
@@ -127,7 +127,7 @@ const Signup = () => {
           </>
         ) : (
           <>
-            <div class="p-2 w-full md:w-1/3">
+            <div class="p-2 w-full md:w-1/2 lg:w-1/4">
               <div class="relative">
                 <label for="name" class="leading-7 text-sm text-gray-300">
                   Name
@@ -142,7 +142,7 @@ const Signup = () => {
                 />
               </div>
             </div>
-            <div class="p-2 w-full md:w-1/3">
+            <div class="p-2 w-full md:w-1/2 lg:w-1/4">
               <div class="relative">
                 <label for="name" class="leading-7 text-sm text-gray-300">
                   Mobile
@@ -157,7 +157,7 @@ const Signup = () => {
                 />
               </div>
             </div>
-            <div class="p-2 w-full md:w-1/3">
+            <div class="p-2 w-full md:w-1/2 lg:w-1/4">
               <div class="relative">
                 <label for="password" class="leading-7 text-sm text-gray-300">
                   Password
@@ -190,7 +190,7 @@ const Signup = () => {
             </Link>
           </p>
         </div>
-        <div id="recaptcha-container"></div>
+        <div id="recaptcha-container" className="mt-8"></div>
       </div>
     </>
   );
